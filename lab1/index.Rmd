@@ -1,0 +1,96 @@
+---
+title: "Macroeconomía Dinámica 1 --- Laboratorio 1"
+author: "Carlos Lezama"
+output:
+  flexdashboard::flex_dashboard:
+    orientation: rows
+    source_code: embed
+---
+
+```{r setup, include=FALSE}
+library(flexdashboard)
+```
+
+# Figuras y gráficas
+
+## Row
+
+### hola
+
+```{r}
+a <- 1
+a
+```
+
+### adiós
+
+Test
+
+## Row
+
+### what
+
+### when
+
+# Solución de ecuaciones no lineales
+
+## Row
+
+### hola
+
+```{r}
+a <- 2
+a
+```
+
+### adiós
+
+Test
+
+## Row
+
+### what
+
+### when
+
+# Modelo de crecimiento neoclásico secuencial
+
+## Row
+
+### hola
+
+```{r}
+a <- 3
+a
+```
+
+### adiós
+
+Test
+
+## Row
+
+### what
+
+### when
+
+# Modelo de crecimiento neoclásico recursivo
+
+## Row
+
+### hola
+
+```{r}
+a <- 4
+a
+```
+
+### adiós
+
+Test
+
+## Row
+
+### what
+
+### when
