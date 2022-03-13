@@ -13,5 +13,4 @@ for i = 1:length(x)
     y(i) = fsolve(f, x(i));
 end
 
-x
-y
+[x; y]'

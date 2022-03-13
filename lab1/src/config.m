@@ -7,7 +7,7 @@ format shortG
 
 set(groot, 'DefaultAxesTickLabelInterpreter', 'latex');
 set(groot, 'DefaultLegendInterpreter', 'latex');
-set(groot, 'DefaultLegendLocation', 'southwest');
+set(groot, 'DefaultLegendLocation', 'southeast');
 set(groot, 'DefaultTextInterpreter', 'latex');
 
 set(0, 'DefaultLineLineWidth', 1);

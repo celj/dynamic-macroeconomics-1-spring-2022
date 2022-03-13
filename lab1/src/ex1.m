@@ -5,7 +5,7 @@
 
 x = linspace(-3, 3, 1000);
 
-figure(1)
+figure(1);
 plot(x, ceil(x), '--r', x, floor(x), '-.b', x, round(x), '-g')
 title('Funciones de MATLAB')
 xlabel('$x$')
@@ -15,7 +15,7 @@ grid on
 
 x = linspace(0, 2 * pi, 1000);
 
-figure(2)
+figure(2);
 subplot(2, 1, 1)
 plot(x, sin(x), '--r')
 title('$\sin(x)$')
