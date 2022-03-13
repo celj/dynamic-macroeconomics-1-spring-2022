@@ -12,6 +12,8 @@ ex2;
 ex3;
 ex4;
 
+set(get(groot, 'Children'), 'units', 'normalized', 'OuterPosition', [0.2 0.1 0.6 0.8]);
+
 figs = findobj(allchild(0), 'flat', 'Type', 'figure');
 
 for i = 1:length(figs)
