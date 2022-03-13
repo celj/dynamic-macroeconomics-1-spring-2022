@@ -1,6 +1,6 @@
+% Macroeconomía dinámica 1 | ITAM | Primavera 2022
 % Laboratorio 1
 % Carlos Lezama
-% Macroeconomía dinámica 1 | ITAM | Primavera 2022
 % Figuras y gráficas
 
 x = linspace(-3, 3, 1000);
