@@ -1,13 +1,13 @@
-% Macroeconomía dinámica 1 | ITAM | Primavera 2022
-% Laboratorio 1
+% Dynamic macroeconomics 1 | ITAM | Spring 2022
+% 1st lab problem set
 % Carlos Lezama
-% Figuras y gráficas
+% Plots
 
 x = linspace(-3, 3, 1000);
 
 figure(1);
 plot(x, ceil(x), '--r', x, floor(x), '-.b', x, round(x), '-g')
-title('Funciones de MATLAB')
+title('MATLAB functions')
 xlabel('$x$')
 ylabel('$f(x)$')
 legend('$\lceil x \rceil$', '$\lfloor x \rfloor$', 'round$(x)$')

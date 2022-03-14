@@ -1,7 +1,7 @@
-% Macroeconomía dinámica 1 | ITAM | Primavera 2022
-% Laboratorio 1
+% Dynamic macroeconomics 1 | ITAM | Spring 2022
+% 1st lab problem set
 % Carlos Lezama
-% Solución de ecuaciones no lineales
+% Nonlinear equations / systems
 
 f = @(x) ((5 * x - 4) / (x - 1));
 
