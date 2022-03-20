@@ -1,0 +1,21 @@
+% Dynamic macroeconomics 1 | ITAM | Spring 2022
+% 1st problem set
+% Carlos Lezama
+
+clc;
+clear all;
+close all;
+
+config;
+ex1;
+ex2;
+ex3;
+ex4;
+
+set(get(groot, 'Children'), 'units', 'normalized', 'OuterPosition', [0.2 0.1 0.6 0.8]);
+
+figs = findobj(allchild(0), 'flat', 'Type', 'figure');
+
+for i = 1:length(figs)
+    exportgraphics(figs(i), ['fig' num2str(length(figs) - i + 1) '.png'], 'Resolution', 500);
+end
