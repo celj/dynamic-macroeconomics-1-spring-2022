@@ -50,7 +50,7 @@ ans =
     0.0010    2.4431
 ```
 
-Clearly, there is a vertical asymptote in $x = 1$. This is why for our last guess $x_0 = 1.02$, the method cannot compute a Newton–Raphson solution.
+Clearly, there is a vertical asymptote in $x = 1$. This is why, for our last guess $x_0 = 1.02$, the method cannot compute a Newton–Raphson solution.
 
 <div style="page-break-after: always; break-after: page;"></div>
 
