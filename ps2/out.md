@@ -17,3 +17,66 @@ $$
 0.1 & 0.4 & 0.5
 \end{bmatrix}
 $$
+
+#### 1.
+
+A brute-force hack for finding the stationary distribution is simply to raise the transition matrix to a high power. Hence,
+
+```matlab
+n = 10000;
+
+PI = [0.5, 0.3, 0.2;
+      0.1, 0.7, 0.2;
+      0.1, 0.4, 0.5];
+
+asymptoticPI = PI^n
+
+ans =
+
+      0.16667      0.54762      0.28571
+      0.16667      0.54762      0.28571
+      0.16667      0.54762      0.28571
+```
+
+We can test if the resulting matrix is a stationary distribution as follows:
+
+```matlab
+asymptoticPI - (asymptoticPI * PI)
+
+ans =
+
+            0            0            0
+   2.7756e-17  -1.1102e-16   5.5511e-17
+   2.7756e-17  -1.1102e-16   5.5511e-17
+```
+
+<div style="page-break-after: always; break-after: page;"></div>
+
+#### 2
+
+<img src="src/fig1.png" style="width:75%;" />
+
+<div style="page-break-after: always; break-after: page;"></div>
+
+#### 3
+
+<img src="src/fig2.png" style="width:75%;" />
+
+<div style="page-break-after: always; break-after: page;"></div>
+
+#### 4
+
+##### Volatility
+
+- Production: 0.14913
+- Consumption: 0.072878
+- Investment: 0.47354
+- Wages: 0.14913
+- Interest Rate: 0.13562
+
+##### Correlation with production
+
+- Consumption: 0.69097
+- Investment: 0.92208
+- Wages: 1
+- Interest Rate: 0.68636

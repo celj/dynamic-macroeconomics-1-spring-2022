@@ -26,7 +26,7 @@ PI = [0.5, 0.3, 0.2;
 
 asymptoticPI = PI^n;
 
-asymptoticPI^2
+asymptoticPI - (asymptoticPI * PI)
 
 % Value function iteration
 
