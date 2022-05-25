@@ -34,7 +34,7 @@ What Imrohoroglu and Joines developed in this paper is an applied general equili
 1.  Overlapping generations of 65-period lived individuals that face mortality risk and individual income risk.
 2.  No bequest motives.
 3.  Private credit markets including private annuities are closed.
-4.  During working years, individuals fce stochastic employment opportunities.
+4.  During working years, individuals face stochastic employment opportunities.
 5.  Inelastic labor supply when individuals face work nature realization.
 
 ## Important assumptions of the model
@@ -164,7 +164,7 @@ $$
 
 2. Relative prices $\{w,r\}$ solve the firm's profit maximization problem by satisfying the first-order conditions for real net return of capital and real wage.
 
-3. Given relative prices $\{w,r\}$, governement policy $\{\theta, \xi, \tau_s, \tau_u\}$, lump-sum transfers $T^*$, the individual policy rules $C_j(y,s)$, $Y_j(y,s)$ solve the individual's dynamic program.
+3. Given relative prices $\{w,r\}$, government policy $\{\theta, \xi, \tau_s, \tau_u\}$, lump-sum transfers $T^*$, the individual policy rules $C_j(y,s)$, $Y_j(y,s)$ solve the individual's dynamic program.
 
 ## Stationary Equilibrium
 
@@ -207,4 +207,110 @@ $$
 T^{*}=\sum_{j} \sum_{y} \sum_{s} \mu_{j} \lambda_{j}(y, s)\left(1-\psi_{j+1}\right) Y_{j}(y, s).
 $$
 
+# Computational details
+
+## Calibration
+
+## Decision rules
+
+## Age-dependent distributions
+
+## Equilibrium
+
+##  Measures of utility and welfare benefits
+
+# Findings
+
+## Optimal Social Security
+
+The authors present the results using a discount factor of $\beta= 1.011$.
+
+- Intuition of the benefit level $\theta$: If the social benefit increases, that reduces the capital stock and therefore raises the net real return of capital.
+![](fig/tabla_1.png)
+
+## Optimal Social Security
+
+Without social security the economy is **dynamically inefficient**.
+
+- A replacement rate between 10% and 20% eliminates the overaccumulation of capital.
+- In this economy, the optimal social security replacement rate is 30%. 
+
+## Optimal Social Security
+
+- We need to note that the optimality of social security does not depend on the elimination of the dynamic inefficiency, because if we include a capital income tax of 40%, the overaccumulation disappears at a replacement rate of less than 10% and the optimal rate is still 30%.
+- This optimality of social security comes from the fact that it provides insurance against uncertain lifetimes and leads to a more desirable age-consumption profile. 
+
+## Optimal Social Security
+
+A higher replacement rate does not necessarily result in a better consumption profile. The next graph shows that pre-retirement consumption grows more rapidly with a 60% replacement rate than it does along the path chosen by the planner.
+
+## Optimal Social Security
+
+![](fig/consumption_paths.png)
+
+## Model with different assumptions
+
+By repeating the model with different assumptions, the authors try to identify separate contributions of the benefits of social security.
+
+![](fig/experiments.png)
+
+
+## Model with different assumptions
+ 
+ Conclusions from this experiment:
+ 
+- In economies with no mortality risk, the only benefit of social security comes from reducing the overaccumulation of capital.
+- In economies with population growth, the degree of dynamic inefficiency (the difference between the return on capital and the population growth rate) is larger.
+
+## Does adding mortality risk increases the optimal level of social security?
+
+The answer is no. The intuition is the following:
+
+1. Mortality risk causes agents to discount the future more heavily and to save less.
+2. Less savings reduces the over accumulation of capital.
+3. In consequence, a smaller social security replacement rate is needed to eliminate the dynamic inefficiency.
+
+## Consumption results
+
+In the next graph we have the simulated consumption profiles for social security replacement rates of 0%, 30% and 60%, compared with an empirical age-consumption profile constructed from the 1987 Consumer Expenditure Survey (CES) 
+
+## Consumption results
+
+![](fig/consumption_profiles.png)
+
+## Asset profiles
+
+In the next graph we have the asset profiles for the social security replacement rates of 0%, 30% and 60%. Assets will be completely exhausted by model age 65.
+
+- We can notice that at low replacement rates, individuals are motivated to save not only to insure against idiosyncratic employment risk, but also to provide for old-age consumption.  
+
+## Asset profiles
+
+![](fig/asset_profiles.png)
+
+## Welfare benefits
+
+The welfare benefit or cost is measured as the consumption supplement in each period of life required to make a newborn indifferent between a given social security replacement rate and no social security.
+
+
+![](fig/welfare_ben.png)
+
+Note: A social security replacement rate of 60% may be close to that in the U.S. economy.  
+
+## Alternative discount factors
+
+The next table contains for different discount factors, the capital-output ratio, the return to capital and the utility. 
+
+- If $\beta = 0.98$, lifetime utility goes down as the benefit level increases, so in this case there is no role for social security.
+
+![](fig/discount_factor.png)
+
+# Conclusions
+
+## Conclusions
+
+- This paper examined the welfare benefits associated with alternative social security arrangements.
+- The parameterizations used to match the model to the U.S. data indicate that there may well be a welfare-enhancing role for social security. 
+- The benefits of social security arise in part, from eliminating dynamic inefficiency caused by over accumulation of capital.
+- A replacement rate as large as 60% may result in significant welfare gains over an economy with no social security system. 
 
