@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.1) (preloaded format=pdflatex 2022.3.30)  25 MAY 2022 09:32
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.1) (preloaded format=pdflatex 2022.3.30)  25 MAY 2022 11:24
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1278,93 +1278,117 @@ sl/10.95 e\OT1/lmss/m/n/10.95 )\OML/lmm/m/it/10.95 "[][];
 
 ] [24
 
-] [25
+]
+<fig/beta.png, id=181, 562.1pt x 702.625pt>
+File: fig/beta.png Graphic file (type png)
+<use fig/beta.png>
+Package pdftex.def Info: fig/beta.png  used on input line 495.
+(pdftex.def)             Requested size: 179.31818pt x 224.1477pt.
 
-] [26
+Overfull \vbox (3.73857pt too high) detected at line 495
+ []
+
+[25
+
+ <./fig/beta.png>] [26
 
 ] [27
 
-]
-<fig/tabla_1.png, id=200, 1429.34pt x 576.1525pt>
-File: fig/tabla_1.png Graphic file (type png)
-<use fig/tabla_1.png>
-Package pdftex.def Info: fig/tabla_1.png  used on input line 477.
-(pdftex.def)             Requested size: 285.38312pt x 115.03503pt.
-[28
+] [28
 
- <./fig/tabla_1.png>] [29
+] [29
 
 ] [30
 
 ] [31
 
+] [32
+
+] [33
+
+] [34
+
 ]
-<fig/consumption_paths.png, id=228, 1003.75pt x 1145.27875pt>
+<fig/tabla_1.png, id=246, 1429.34pt x 576.1525pt>
+File: fig/tabla_1.png Graphic file (type png)
+<use fig/tabla_1.png>
+Package pdftex.def Info: fig/tabla_1.png  used on input line 634.
+(pdftex.def)             Requested size: 285.38312pt x 115.03503pt.
+[35
+
+ <./fig/tabla_1.png>] [36
+
+] [37
+
+] [38
+
+]
+<fig/consumption_paths.png, id=273, 1003.75pt x 1145.27875pt>
 File: fig/consumption_paths.png Graphic file (type png)
 <use fig/consumption_paths.png>
-Package pdftex.def Info: fig/consumption_paths.png  used on input line 520.
+Package pdftex.def Info: fig/consumption_paths.png  used on input line 677.
 (pdftex.def)             Requested size: 196.44266pt x 224.14107pt.
 
-Overfull \vbox (3.73193pt too high) detected at line 520
- []
-
-[32
-
- <./fig/consumption_paths.png>]
-<fig/experiments.png, id=236, 2347.77126pt x 1003.75pt>
-File: fig/experiments.png Graphic file (type png)
-<use fig/experiments.png>
-Package pdftex.def Info: fig/experiments.png  used on input line 528.
-(pdftex.def)             Requested size: 307.26295pt x 131.36508pt.
-[33
-
- <./fig/experiments.png>] [34
-
-] [35
-
-] [36
-
-]
-<fig/consumption_profiles.png, id=262, 1583.9175pt x 1003.75pt>
-File: fig/consumption_profiles.png Graphic file (type png)
-<use fig/consumption_profiles.png>
-Package pdftex.def Info: fig/consumption_profiles.png  used on input line 575.
-(pdftex.def)             Requested size: 307.27963pt x 194.72726pt.
-[37
-
- <./fig/consumption_profiles.png>] [38
-
-]
-<fig/asset_profiles.png, id=277, 1003.75pt x 1113.15875pt>
-File: fig/asset_profiles.png Graphic file (type png)
-<use fig/asset_profiles.png>
-Package pdftex.def Info: fig/asset_profiles.png  used on input line 595.
-(pdftex.def)             Requested size: 202.10956pt x 224.13951pt.
-
-Overfull \vbox (3.73038pt too high) detected at line 595
+Overfull \vbox (3.73193pt too high) detected at line 677
  []
 
 [39
 
- <./fig/asset_profiles.png>]
-<fig/welfare_ben.png, id=285, 4015.0pt x 645.41125pt>
-File: fig/welfare_ben.png Graphic file (type png)
-<use fig/welfare_ben.png>
-Package pdftex.def Info: fig/welfare_ben.png  used on input line 607.
-(pdftex.def)             Requested size: 307.2384pt x 49.38857pt.
+ <./fig/consumption_paths.png>]
+<fig/experiments.png, id=281, 2347.77126pt x 1003.75pt>
+File: fig/experiments.png Graphic file (type png)
+<use fig/experiments.png>
+Package pdftex.def Info: fig/experiments.png  used on input line 685.
+(pdftex.def)             Requested size: 307.26295pt x 131.36508pt.
 [40
 
- <./fig/welfare_ben.png>]
-<fig/discount_factor.png, id=293, 2311.63625pt x 1003.75pt>
-File: fig/discount_factor.png Graphic file (type png)
-<use fig/discount_factor.png>
-Package pdftex.def Info: fig/discount_factor.png  used on input line 622.
-(pdftex.def)             Requested size: 307.26035pt x 133.41742pt.
-[41
+ <./fig/experiments.png>] [41
 
- <./fig/discount_factor.png>] [42
+] [42
 
 ] [43
+
+]
+<fig/consumption_profiles.png, id=308, 1583.9175pt x 1003.75pt>
+File: fig/consumption_profiles.png Graphic file (type png)
+<use fig/consumption_profiles.png>
+Package pdftex.def Info: fig/consumption_profiles.png  used on input line 732.
+(pdftex.def)             Requested size: 307.27963pt x 194.72726pt.
+[44
+
+ <./fig/consumption_profiles.png>] [45
+
+]
+<fig/asset_profiles.png, id=322, 1003.75pt x 1113.15875pt>
+File: fig/asset_profiles.png Graphic file (type png)
+<use fig/asset_profiles.png>
+Package pdftex.def Info: fig/asset_profiles.png  used on input line 752.
+(pdftex.def)             Requested size: 202.10956pt x 224.13951pt.
+
+Overfull \vbox (3.73038pt too high) detected at line 752
+ []
+
+[46
+
+ <./fig/asset_profiles.png>]
+<fig/welfare_ben.png, id=330, 4015.0pt x 645.41125pt>
+File: fig/welfare_ben.png Graphic file (type png)
+<use fig/welfare_ben.png>
+Package pdftex.def Info: fig/welfare_ben.png  used on input line 764.
+(pdftex.def)             Requested size: 307.2384pt x 49.38857pt.
+[47
+
+ <./fig/welfare_ben.png>]
+<fig/discount_factor.png, id=338, 2311.63625pt x 1003.75pt>
+File: fig/discount_factor.png Graphic file (type png)
+<use fig/discount_factor.png>
+Package pdftex.def Info: fig/discount_factor.png  used on input line 779.
+(pdftex.def)             Requested size: 307.26035pt x 133.41742pt.
+[48
+
+ <./fig/discount_factor.png>] [49
+
+] [50
 
 ]
 \tf@nav=\write5
@@ -1378,11 +1402,11 @@ Package pdftex.def Info: fig/discount_factor.png  used on input line 622.
 
 (out.aux) ) 
 Here is how much of TeX's memory you used:
- 24698 strings out of 478578
- 492396 string characters out of 2840891
+ 24750 strings out of 478578
+ 493014 string characters out of 2840891
  754009 words of memory out of 3000000
- 42117 multiletter control sequences out of 15000+600000
- 525628 words of font info for 109 fonts, out of 8000000 for 9000
+ 42140 multiletter control sequences out of 15000+600000
+ 526099 words of font info for 113 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  128i,13n,122p,1002b,450s stack positions out of 10000i,1000n,20000p,200000b,80000s
 {/Library/Application Support/MiKTeX/texmfs/install/fonts/enc/dvips/
@@ -1404,9 +1428,9 @@ sy10.pfb></Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public
 /lm/lmsy6.pfb></Library/Application Support/MiKTeX/texmfs/install/fonts/type1/p
 ublic/lm/lmsy8.pfb></Library/Application Support/MiKTeX/texmfs/install/fonts/ty
 pe1/public/amsfonts/symbols/msbm10.pfb>
-Output written on out.pdf (43 pages, 1624495 bytes).
+Output written on out.pdf (50 pages, 1874784 bytes).
 PDF statistics:
- 419 PDF objects out of 1000 (max. 8388607)
- 127 named destinations out of 1000 (max. 500000)
- 32886 words of extra memory for PDF output out of 35830 (max. 10000000)
+ 468 PDF objects out of 1000 (max. 8388607)
+ 148 named destinations out of 1000 (max. 500000)
+ 32891 words of extra memory for PDF output out of 35830 (max. 10000000)
 

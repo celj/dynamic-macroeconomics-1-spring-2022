@@ -1,7 +1,7 @@
 ---
 title: 'A Life Cycle Analysis of Social Security'
 author: |
-  | Carlos Lezama, Santiago Payró, Emiliano Ramírez
+  | Emiliano Ramírez, Carlos Lezama, Santiago Payró
   | Dynamic Macroeconomics
   | ITAM
 date: 'Spring 2022'
@@ -211,13 +211,125 @@ $$
 
 ## Calibration
 
+Characteristics of the model:
+
+- Individuals are assumed to be born at 21 ($j=1$). 
+- The mandatory retirement age is taken to be 65 ($j^*=45$).
+- They can live until they are 85 ($J=65$).
+
+We require that our model generate a wealth-income ratio comparable to that observed in the United States. 
+
+## Parameters
+
+- Aggregate labor input is computed as $N= 0.94 \hat{h} \sum_{j=1}^{j^*-1} \mu_j \varepsilon_j$, where 0.94 is the employment rate, $\hat{h}$ =0.45 is the raw hours of work, $\mu_j$ is the share of people that are not retired, and $\varepsilon_j$ is the efficiency index. 
+- Our $\beta$ will be 1.011, as part of a 2SLS.
+
+## Why the beta is higher than 1?
+
+- This value of $\beta = 1.011$ not only has empirical support, but also results in a wealth-income ratio close to that observed in the United States.
+- Thanks to the inclusion of the mortality risk, the *effective discount factors* will be $\{ \beta^{j-1} \prod_{k=1}^{j} \psi_k  \}^J_{j=1}$. 
+- The next figure shows the sequence of the effective discount factors.
+
+## Why the beta is higher than 1?
+
+![](fig/beta.png)
+
 ## Decision rules
 
-## Age-dependent distributions
+The optimization problem faced by an individual in this economy is one of finite horizon dynamic programming.
 
-## Equilibrium
+Hence, the fixed point implicit in the definition of Bellman's equation and the accompanying decision rules for each cohort $j$ can be found by a single recursion working backwards from the last period of life.
+
+The functional form of the value function just after the last period of life is known a priori to be identically zero. Namely, $V_{J + 1} (\cdot) \equiv 0$.
+
+Solutions are found by calculating the following recursion on the functional equation starting from $j = J$ until $j = 1$.
+
+## Decision rules
+
+$$
+V_j(y_j, s_j) = \max_{\{c_j, y_j\}} \left\{ U(c_j) + \beta \psi_{j + 1} E_{s^\prime} V_{j + 1} (y_{j + 1}, s_{j + 1}) \right\}
+$$
+
+subject to
+
+$$
+y_j = (1 + r)y_{j - 1} + q_j - c_j + T, \quad c_j \geq 0, y_j \geq 0,
+$$
+
+where
+
+$$
+q_j =
+\begin{cases}
+(1 - \tau_s - \tau_u)w\varepsilon_j\hat{h} & \text{for}\ j = 1, 2, \dots, j^* - 1,\ \text{if}\ s = e; \\
+\xi w\hat{h} & \text{for}\ j = 1, 2, \dots, j^* - 1,\ \text{if}\ s = u; \\
+b & \text{for}\ j = j^*, j^* + 1, \dots, J.
+\end{cases}
+$$
+
+## Two parts of the problem
+
+- $s \in S$ and $y_j \in D  \equiv \{d_1, d_2, \dots, d_m\}$.
+- For individuals at age $j^*$ or older, the state space is an $m \times 1$ vector $X = \left\{ x = y : y \in D \right\}$.
+- For individuals at age $j^* - 1$ or younger, the state space is an $m \times 2$ vector $\tilde{X} = \left\{ \tilde{x} = (y, s) : y \in D, s \in S \right\}$.
+
+## Dead people
+
+$$
+V_j(x_j) = \max_{\{c_J, y_J\}} \left\{ U(c_J) \right\}
+$$
+
+subject to
+
+$$
+(1 + r)y_{J - 1} + b - c_J + T = 0, \quad c_J \geq 0.
+$$
+
+## Retirees
+
+$$
+V_{J - 1} (x_{J - 1}) = \max_{\{ c_{J - 1}, y_{J - 1} \}} \left\{ U(c_{J - 1}) + \beta \psi_J V_J(x_J) \right\}
+$$
+
+subject to
+
+$$
+y_{J - 1} = (1 + r)y_{J - 2} + b - c_{J - 1} + T, \quad c_{J - 1} \geq 0,\ y_{J - 1} \geq 0.
+$$
+
+## One-year before retirement
+
+$$
+V_{j^* - 1} (\tilde{x}_{j^* - 1}) = \max_{\{c_{j^* - 1}, y_{j^* - 1}\}} \left\{ U(c_{j^* - 1}) + \beta\psi_{j^*} V_{j^*}(\tilde{x}_{j^*})\right\}
+$$
+
+subject to
+
+$$
+y_{j^* - 1} = (1 + r)y_{j^* - 2} + q_{j^* - 1} - c_{j^* - 1} + T, \quad c_{j^* - 1} \geq 0,\ y_{j^* - 1} \geq 0.
+$$
+
+## Potential working force
+
+$$
+V_j(\tilde{x}_j) = \max_{\{c_j, y_j\}} \left\{ U(c_j) + \beta\psi_{j + 1} \sum_{s^\prime} \Pi (s^\prime, s) V_{j + 1} (\tilde{x}_{j + 1}) \right\}
+$$
+
+subject to
+
+$$
+y_j = (1 + r)y_{j - 1} + q_j - c_j + T, \quad c_j \geq 0,\ y_j \geq 0.
+$$
 
 ##  Measures of utility and welfare benefits
+
+In order to compare alternative social arrangements, we need a measure of "average utility." Given a policy arrangement $\Omega = \{ \theta, \xi, \tau_s, \tau_u \}$, we calculate
+
+$$
+W(\Omega) = \sum_{j = 1}^J \sum_y \sum_s \beta^{j - 1} \left[ \prod_{k = 1}^j \psi_k \right] \lambda_j (y, s) U(C_j(y, s)),
+$$
+
+as our measure of utility.
 
 # Findings
 
