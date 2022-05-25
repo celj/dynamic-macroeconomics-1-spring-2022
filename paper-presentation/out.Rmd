@@ -104,6 +104,8 @@ Where $\theta$ is a fraction of the average lifetime employed income. This is in
 The only role of government is to administer the unemployment insurance and social security programs.
 \end{remark}
 
+## Preferences
+
 The government chooses the unemployment insurance and the social security tax rates so that its budget is balanced. Under these assumptions the disposable income of an individual is given by:
 
 $$
@@ -111,8 +113,8 @@ q_{j}= \begin{cases}\left(1-\tau_{s}-\tau_{u}\right) w_{j}^{e} & \text { for } j
 $$
 The unemployment insurance replacement ratio and the associated tax rate are part of government's policy specification.
 
-\begin{reamrk}
-The only condition for choosing the policy instruments is that both the social security and the unemployment insurance systmes be self-financing.
+\begin{remark}
+The only condition for choosing the policy instruments is that both the social security and the unemployment insurance systems be self-financing.
 \end{remark}
 
 ## Technology
@@ -142,14 +144,17 @@ For any beginning-of-period asset holding and employment status pair $(y,s) \in 
 
 Let $V_j(y,s)$ be the maximized value of objective function of an age-$j$ agent with beginning-of-period $(y,s)$. $V_j(y,s)$ is defined as the solution to the dynamic program 
 
+
+
+## Stationary Equilibrium
+
 $$
 V_{j}(y, s)=\max _{\left(c, y^{\prime}\right) \in \Omega_{j}(y, s)}\left\{U(c)+\beta \psi_{j+1} E_{s^{\prime}} V_{j+1}\left(y^{\prime}, s^{\prime}\right)\right\}, \quad j=1,2, \ldots, J
 $$
+
+Definition: A Stationary Equilibrium for a given set of policy arrangements $\{\theta, \xi, \tau_s, \tau_u\}$ is a collection of value functions $V_j(y,s)$, individual policy rules $C_j: D\times S \rightarrow \mathbb{R}_+$, $Y_j: D \times S \rightarrow D$, age-dependent (but invariant in time) distribution of agent types $\lambda_j(y,s)$ for each age $j==1,2,\dots,J$, relative prices of labor and capital $\{w,r\}$, and lump-sum transfer $T^*$ such that:
+
 ## Stationary Equilibrium
-
-### Definition
-
-A Stationary Equilibrium for a given set of policy arrangements $\{\theta, \xi, \tau_s, \tau_u\}$ is a collection of value functions $V_j(y,s)$, individual policy rules $C_j: D\times S \rightarrow \mathbb{R}_+$, $Y_j: D \times S \rightarrow D$, age-dependent (but invariant in time) distribution of agent types $\lambda_j(y,s)$ for each age $j==1,2,\dots,J$, relative prices of labor and capital $\{w,r\}$, and lump-sum transfer $T^*$ such that:
 
 1. Individual and aggregate behaviour are consistent:
 
@@ -161,11 +166,15 @@ $$
 
 3. Given relative prices $\{w,r\}$, governement policy $\{\theta, \xi, \tau_s, \tau_u\}$, lump-sum transfers $T^*$, the individual policy rules $C_j(y,s)$, $Y_j(y,s)$ solve the individual's dynamic program.
 
+## Stationary Equilibrium
+
 4. Commodity markets clear,
 
-$$
-\sum_{j} \sum_{y} \sum_{s} \mu_{j} \lambda_{j}(y, s)\left[C_{j}(y, s)+Y_{j}(y, s)\right]=f(K, N)+(1-\delta) \sum_{j} \sum_{y} \sum_{s} \mu_{j} \lambda_{j}(y, s) Y_{j-1}(y, s)
-$$
+\begin{align*}
+\sum_{j} \sum_{y} \sum_{s} \mu_{j} \lambda_{j}(y, s)\left[C_{j}(y, s)+Y_{j}(y, s)\right]&= \\
+f(K, N)+(1-\delta) \sum_{j} \sum_{y} \sum_{s} \mu_{j} \lambda_{j}(y, s) Y_{j-1}(y, s)
+\end{align*}
+
 where the initial wealth distribution $Y_0$ is taken as given.
 
 ## Stationary Equilibrium
@@ -179,8 +188,13 @@ $$
 6. Social security system is self-financing:
 
 $$
-\tau_{s}=\frac{\sum_{j=j^{*}}^{J} \sum_{y} \mu_{j} \lambda_{j}(y, s) b_{j}}{\sum_{j=1}^{j^{*}-1} \sum_{y} \mu_{j} \lambda_{j}(y, s=e) w \varepsilon_{j} \hat{h}}=\frac{b \sum_{j=j^{*}}^{J} \mu_{j}}{w \hat{h} \sum_{j=1}^{j^{*}-1} \mu_{j} \lambda_{j}(y, s) \varepsilon_{j}}
+\tau_{s}=\frac{\sum_{j=j^{*}}^{J} \sum_{y} \mu_{j} \lambda_{j}(y, s) b_{j}}{\sum_{j=1}^{j^{*}-1} \sum_{y} \mu_{j} \lambda_{j}(y, s=e) w \varepsilon_{j} \hat{h}}=\frac{b \sum_{j=j^{*}}^{J} \mu_{j}}{w \hat{h} \sum_{j=1}^{j^{*}-1} \mu_{j} \lambda_{j}(y, s) \varepsilon_{j}}.
 $$
+
+
+
+## Stationary Equilibrium
+
 7. Unemployment insurance benefits program is self-financing:
 
 $$
